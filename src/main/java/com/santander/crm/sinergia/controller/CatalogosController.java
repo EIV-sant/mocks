@@ -82,6 +82,8 @@ public class CatalogosController {
 		p1.setId(1);
 		p1.setNombre("Nomina");
 		
+		response.add(p1);
+		
 		return new ResponseEntity<List<Producto>>(response, header, hs);
 	}
 	
@@ -185,6 +187,7 @@ public class CatalogosController {
 		t2.setId(2);
 		t2.setNombre("Casa");
 		
+		response.add(t1);
 		response.add(t2);
 		
 		return new ResponseEntity<List<Telefono>>(response, header, hs);
