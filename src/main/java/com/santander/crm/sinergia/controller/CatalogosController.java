@@ -30,8 +30,13 @@ public class CatalogosController {
 		estado.setId(1);
 		estado.setNombre("Jalisco");
 		
+		Estado estado2 = new Estado();
+		estado2.setId(1);
+		estado2.setNombre("Chihuahua");
+		
 		List<Estado> response = new ArrayList<Estado>();
 		response.add(estado);
+		response.add(estado2);
 		
 //		List<Estado> response = catalogoService.getAllEstados();
 		
